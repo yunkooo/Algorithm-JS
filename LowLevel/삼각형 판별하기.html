@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+                let sum = a+b+c;
+                let max;
+                 if ( a > b ) max=a;
+                 else max = b;
+                 if ( c > max) max = c;
+
+                if(sum-max >= max){
+                    answer ="YES";
+                }else answer = "NO";
+
+                 
+
+                
+                
+                return answer;
+            }
+
+            console.log(solution(13, 33, 17));
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 출처 - 인프런 자바스크립트 알고리즘 문제풀이(김태원) -->

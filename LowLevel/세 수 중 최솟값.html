@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+                
+                if(a < b && a < c) answer = a;
+                else if (b < a && b<c) answer = b;
+                else if (c < a && c<b) answer = c;
+                
+                return answer;
+
+            }
+
+            console.log(solution(2, 5, 3));
+        </script>
+    </body>
+</html>
+
+
+<!-- other solution
+if(a < b) answer = a;
+else answer = b;
+if ( c < answer) answer = c; -->
+
+<!-- 출처 - 인프런 자바스크립트 알고리즘 문제풀이(김태원) -->
