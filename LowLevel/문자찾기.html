@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s, t){
+                let answer=0;
+
+                for(item of s){
+                    if(item == t){
+                        answer +=1;
+                    }
+                }
+
+                return answer;
+            }
+            
+            let str="COMPUTERPROGRAMMING";
+            console.log(solution(str, 'R'));
+        </script>
+    </body>
+</html>
+
+<!--
+other solution
+split() 으로 구분한다음 length길이에서 -1 해준다.
+마지막 요소에서 나누어도 마지막에는 빈문자가 들어온다.
+-->
