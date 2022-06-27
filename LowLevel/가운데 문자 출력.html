@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer;
+                let arr = [...s];
+                let mid = Math.floor(arr.length/2);
+                if(arr.length%2 == 0 ){
+                    answer = arr.slice(mid-1,mid+1).join('');
+                }else {
+                    answer = arr[mid];
+
+                }
+
+                return answer;
+            }
+            console.log(solution("good"));
+        </script>
+    </body>
+</html>
