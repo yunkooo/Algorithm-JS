@@ -1,15 +1,11 @@
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 let input = fs.readFileSync(filePath,'utf-8').split('\n');
-input = Number(input[0]);
+let A = Number(input[0]);
 
-sol(input);
+sol(A);
 
 function sol(n){
-    for(let i=1; i<=n; i++){
-        console.log(i);
-    }
+    s = '*'
+    for(let i=1; i<=n; i++) console.log(s.repeat(i));
 }
-
-
-// 시간초과

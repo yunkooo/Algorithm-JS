@@ -1,15 +1,9 @@
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 let input = fs.readFileSync(filePath,'utf-8').split('\n');
-input = Number(input[0]);
+let n=input.shift();
+let arr = input.map(a => a.split(' '));
 
-sol(input);
-
-function sol(n){
-    for(let i=1; i<=n; i++){
-        console.log(i);
-    }
+for(let i=0; i<+n; i++){
+    console.log(`Case #${i}: ${Number(arr[i][0])+Number(arr[i][1])}`);
 }
-
-
-// 시간초과
